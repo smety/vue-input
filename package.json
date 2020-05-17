@@ -1,0 +1,31 @@
+{
+  "name": "vue-input",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel watch js/index.js --out-dir www/dist --public-url '../'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smety/vue-input.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smety/vue-input/issues"
+  },
+  "homepage": "https://github.com/smety/vue-input#readme",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.1.2",
+    "parcel-bundler": "1.12.4",
+    "sass": "^1.26.5",
+    "typescript": "^3.9.2",
+    "vue": "2.6.11",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4"
+  }
+}
