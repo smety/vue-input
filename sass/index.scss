@@ -10,7 +10,7 @@ body {
 }
 
 .input {
-  border: 1px solid red;
+  border: 1px solid #aaaebc;
 
   &-sm {
     line-height: 42px;
@@ -26,8 +26,9 @@ body {
 .input-error {
   color: red;
   padding: 5px 0 0 0;
+  display: block;
 }
 
 .input-label {
-
+  display: block;
 }

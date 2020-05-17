@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel watch js/index.js --out-dir www/dist --public-url '../'"
+    "dev": "parcel watch js/index.js sass/index.scss --out-dir www/dist --public-url '../'"
   },
   "repository": {
     "type": "git",

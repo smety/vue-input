@@ -1,11 +1,14 @@
 <template lang="html">
-	<label :id="id">
-		<div class="input-label">{{ label }}</div>
-		<input :class="[ sizeClass, 'input' ]" :id="id">
-		<span class="input-error" v-if="hasError">
+	<div>
+		<label :id="id">
+			<div class="input-label">{{ label }}</div>
+			<input :class="[ sizeClass, 'input' ]" :id="id" @focus="setInputActive()">
 
-		</span>
-	</label>
+			<span class="input-error" v-if="hasError">
+				Field is required
+			</span>
+		</label>
+	</div>
 </template>
 
 
@@ -35,7 +38,23 @@
             },
         },
 
+        data(): object {
+            return {
+                isActive: false
+            }
+        },
+
+        methods: {
+            setInputActive(): any {
+                this.isActive = true
+            }
+        },
+
         computed: {
+            isInputActive: function () {
+                return this.hasError || this.isActive
+            },
+
             sizeClass: function () {
                 return `input-${this.size}`
             }
