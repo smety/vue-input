@@ -3,7 +3,7 @@
 		<div class="input-label">{{ label }}</div>
 		<input :class="[ sizeClass, 'input' ]" :id="id">
 		<span class="input-error" v-if="hasError">
-			ads
+
 		</span>
 	</label>
 </template>
