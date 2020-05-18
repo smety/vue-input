@@ -18,6 +18,8 @@
   "homepage": "https://github.com/smety/vue-input#readme",
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.1.2",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
     "parcel-bundler": "1.12.4",
     "sass": "^1.26.5",
     "typescript": "^3.9.2",
@@ -27,5 +29,13 @@
   "dependencies": {
     "vue": "^2.6.11",
     "vue-hot-reload-api": "^2.3.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "plugin:vue/essential",
+      "plugin:prettier/recommended",
+      "eslint:recommended"
+    ]
   }
 }
